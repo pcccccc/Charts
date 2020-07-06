@@ -137,6 +137,9 @@ open class BarChartDataSet: BarLineScatterCandleBubbleChartDataSet, BarChartData
         return gradientColors[index % gradientColors.count]
     }
     
+    /// corners to be rounded
+    open var roundedCorners: UIRectCorner = []
+    
     // MARK: - NSCopying
     
     open override func copyWithZone(_ zone: NSZone?) -> AnyObject
